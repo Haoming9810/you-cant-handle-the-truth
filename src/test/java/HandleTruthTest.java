@@ -16,11 +16,11 @@ public class HandleTruthTest {
      //   HandleTruth.phrase();
     }
     @Test
-    public void countWord() {
+    public void countYour() {
         Map<? extends Serializable, ?> actualwordCount = new TreeMap<Integer, Set<String>>();
         final Map<String, Integer> expectedwordCount = new HashMap<>();
-        expectedwordCount.put("words", 1);
-        actualwordCount = HandleTruth.phrase("words");
+        expectedwordCount.put("your", 1);
+        actualwordCount = HandleTruth.phrase("your");
 
 
         assertEquals(
@@ -28,11 +28,11 @@ public class HandleTruthTest {
         );
     }
     @Test
-    public void countHave() {
+    public void countGuns() {
         Map<? extends Serializable, ?> actualwordCount = new TreeMap<Integer, Set<String>>();
         final Map<String, Integer> expectedwordCount = new HashMap<>();
-        expectedwordCount.put("have", 1);
-        actualwordCount = HandleTruth.phrase("have");
+        expectedwordCount.put("guns", 1);
+        actualwordCount = HandleTruth.phrase("guns");
 
 
         assertEquals(
@@ -40,24 +40,11 @@ public class HandleTruthTest {
         );
     }
     @Test
-    public void countI() {
+    public void countVery() {
         Map<? extends Serializable, ?> actualwordCount = new TreeMap<Integer, Set<String>>();
         final Map<String, Integer> expectedwordCount = new HashMap<>();
-        expectedwordCount.put("i", 1);
-        actualwordCount = HandleTruth.phrase("i");
-
-
-
-        assertEquals(
-                expectedwordCount, actualwordCount
-        );
-    }
-    @Test
-    public void countThe() {
-        Map<? extends Serializable, ?> actualwordCount = new TreeMap<Integer, Set<String>>();
-        final Map<String, Integer> expectedwordCount = new HashMap<>();
-        expectedwordCount.put("the", 1);
-        actualwordCount = HandleTruth.phrase("the");
+        expectedwordCount.put("very", 1);
+        actualwordCount = HandleTruth.phrase("very");
 
 
 
@@ -66,11 +53,24 @@ public class HandleTruthTest {
         );
     }
     @Test
-    public void countDont() {
+    public void countAbout() {
         Map<? extends Serializable, ?> actualwordCount = new TreeMap<Integer, Set<String>>();
         final Map<String, Integer> expectedwordCount = new HashMap<>();
-        expectedwordCount.put("dont", 1);
-        actualwordCount = HandleTruth.phrase("dont");
+        expectedwordCount.put("about", 1);
+        actualwordCount = HandleTruth.phrase("about");
+
+
+
+        assertEquals(
+                expectedwordCount, actualwordCount
+        );
+    }
+    @Test
+    public void countExpplain() {
+        Map<? extends Serializable, ?> actualwordCount = new TreeMap<Integer, Set<String>>();
+        final Map<String, Integer> expectedwordCount = new HashMap<>();
+        expectedwordCount.put("explain", 1);
+        actualwordCount = HandleTruth.phrase("explain");
 
 
 
