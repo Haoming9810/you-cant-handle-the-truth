@@ -22,13 +22,15 @@ public class HandleTruth {
                 }
                 if (wordMap.containsKey(word)) {
                     wordMap.put(word, wordMap.get(word) + 1);
+
                     continue;
+
                 }
 
                 wordMap.put(word,1);
 
 
-                return wordMap;
+              return wordMap;
             }
             for (Map.Entry<String, Integer> entry : wordMap.entrySet()) {
                 System.out.println(entry);

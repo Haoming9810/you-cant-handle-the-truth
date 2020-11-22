@@ -17,8 +17,8 @@ public class HandleTruthTest {
     @Test
     public void makeshiftTest() {
 
-        String phrase;
-        HandleTruth.phrase(phrase);
+
+       // HandleTruth.phrase();
     }
     @Test
     public void countYour() {
