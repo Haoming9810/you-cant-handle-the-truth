@@ -11,9 +11,14 @@ import static junit.framework.TestCase.assertEquals;
 @SuppressWarnings("InstantiationOfUtilityClass")
 public class HandleTruthTest {
     private final HandleTruth WordCount = new HandleTruth ();
+    
+
+
     @Test
     public void makeshiftTest() {
-     //   HandleTruth.phrase();
+
+        String phrase;
+        HandleTruth.phrase(phrase);
     }
     @Test
     public void countYour() {
@@ -21,8 +26,6 @@ public class HandleTruthTest {
         final Map<String, Integer> expectedwordCount = new HashMap<>();
         expectedwordCount.put("your", 1);
         actualwordCount = HandleTruth.phrase("your");
-
-
         assertEquals(
                 expectedwordCount, actualwordCount
         );
@@ -33,8 +36,6 @@ public class HandleTruthTest {
         final Map<String, Integer> expectedwordCount = new HashMap<>();
         expectedwordCount.put("guns", 1);
         actualwordCount = HandleTruth.phrase("guns");
-
-
         assertEquals(
                 expectedwordCount, actualwordCount
         );
@@ -45,8 +46,6 @@ public class HandleTruthTest {
         final Map<String, Integer> expectedwordCount = new HashMap<>();
         expectedwordCount.put("very", 1);
         actualwordCount = HandleTruth.phrase("very");
-
-
 
         assertEquals(
                 expectedwordCount, actualwordCount
@@ -59,8 +58,6 @@ public class HandleTruthTest {
         expectedwordCount.put("about", 1);
         actualwordCount = HandleTruth.phrase("about");
 
-
-
         assertEquals(
                 expectedwordCount, actualwordCount
         );
@@ -71,9 +68,6 @@ public class HandleTruthTest {
         final Map<String, Integer> expectedwordCount = new HashMap<>();
         expectedwordCount.put("explain", 1);
         actualwordCount = HandleTruth.phrase("explain");
-
-
-
 
         assertEquals(
                 expectedwordCount, actualwordCount
